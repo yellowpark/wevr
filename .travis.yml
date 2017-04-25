@@ -1,0 +1,19 @@
+language: node_js
+node_js:
+  - '4.1'
+
+# Deploy
+deploy:
+  edge: true
+  provider: cloudfoundry
+  username: chris.dalby-cic-uk@uk.ibm.com
+  #########################
+  ## Add BLUEMIX_PASSWORD environment variable to your Travis project's settings
+  ## https://docs.travis-ci.com/user/environment-variables/#Defining-Variables-in-Repository-Settings
+  #########################
+  password: ${BLUEMIX_PASSWORD}
+  organization: chris.dalby-cic-uk@uk.ibm.com
+  space: cic-uk-test
+  api: https://api.ng.bluemix.net/
+  on:
+    branch: master

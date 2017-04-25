@@ -1,0 +1,26 @@
+<!doctype html>
+<html ng-app="weatherApp">
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="ISO-8859-1">
+    <title>wevr - Playing with Angular and the Weather Channel</title>
+    <link rel="stylesheet" href="css/styles.css">
+  </head>
+  <body>
+    <header role="banner">
+      <div class="banner__container">
+        <div class="header__logo"><a href="/"><img ng-src="images/wevr-logo.png" alt="wevr logo" title="wevr logo" class="header__wevr-logo"></a></div>
+        <div class="header__blurb"><h3 class="header__blurb-text">Weather and photos from locations.  It's just for fun.</h2></div>
+      </div>
+    </header>
+    <div class="container" ng-view>
+      <!-- Dynamic Content -->
+    </div>
+    <footer>
+      <div class="footer__logo"><img ng-src="images/wundergroundLogo_4c_horz.png" alt="" title="" class="footer__wunderland-logo"></div>
+      <div class="footer__credit-text">Powered by Weather Underground</div>
+    </footer>
+    <script defer src="./js/all.min.js"></script>
+    <script defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCGqbiO7pZ9JvbYwiN9JNiZuM5YCCuPJ8Y&libraries=places"></script>
+  </body>
+</html>

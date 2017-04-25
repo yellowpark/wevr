@@ -1,0 +1,8 @@
+<div class="map-window">
+    <input id="pac-input" class="controls" type="text" placeholder="Search for a location" autocomplete="off" style="z-index: 0; position: absolute; left: 114px; top: 0px;" onfocus="this.value='';">
+    <div id="map"></div>
+    <div id="repeat" ng-repeat="marker in markers | orderBy : 'title'">
+         <a id="country_container" href="#" ng-click="openInfoWindow($event, marker)">
+         <label id="names" >{{marker.title}}</label></a>
+    </div>
+</div>

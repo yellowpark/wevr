@@ -1,0 +1,7 @@
+<div class="weather-window">
+  <div class="weather-column" ng-repeat="weather in rawWeather.forecast.txt_forecast.forecastday" ng-if="$even">
+    <h3>{{ weather.title }}</p>
+    <p><img ng-src="{{ weather.icon_url }}" alt="{{ weather.fcttext }}" title="{{ weather.fcttext }}"></p>
+    <p>{{ weather.fcttext }}</p>
+  </div>
+</div>

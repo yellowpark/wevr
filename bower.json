@@ -1,0 +1,29 @@
+{
+  "name": "wevr",
+  "main": "index.js",
+  "version": "0.0.0",
+  "authors": [
+    "Chris Dalby"
+  ],
+  "license": "Apache-2.0",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "angular": "^1.5.5",
+    "angular-route": "^1.5.5",
+    "angular-ui": "^0.4.0",
+    "ngmap": "^1.17.3",
+    "angular-flickr-api-factory": "^0.5.1",
+    "angular-sanitize": "^1.5.5",
+    "angular-animate": "^1.5.6"
+  },
+  "devDependencies": {
+    "sass-toolkit": "~2.9.0",
+    "ibm-colors": "~1.4.0"
+  }
+}

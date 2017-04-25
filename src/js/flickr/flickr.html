@@ -1,0 +1,15 @@
+
+<div class="flickr__container">
+  <div ng-show="$ctrl.gpsData.name.length > 0">
+    <h1 class="subtitle">Photos from {{ $ctrl.gpsData.name }}</h1>
+  </div>
+  <div ng-hide="$ctrl.gpsData.name.length > 0">
+    <h1 class="subtitle">Photos from London</h1>
+  </div>
+  <div class="flickr__container-window">
+    <div class="flickr__column" ng-repeat="photo in $ctrl.rawPhotos">
+      <div class="flickr__photo"><a href="{{ photo[1]}}"><img ng-src="{{ photo[0] }}" class="flickr__img" alt="{{ photo[2] }}" title="{{ photo[2] }}"></a></div>
+    </div>
+  </div>
+  <div class="flickr__footer">Photos from <a href="http://flickr.com">Flickr</a></div>
+</div>

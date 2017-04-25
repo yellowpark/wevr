@@ -1,0 +1,14 @@
+<div class="map-info__window">
+  <div ng-show="$ctrl.gpsData.name.length > 0">
+    <h1 class="subtitle">{{ $ctrl.gpsData.name }}</h1>
+    <p>Lat: {{ $ctrl.gpsData.geometry.location.lat() }},&nbsp;Long: {{ $ctrl.gpsData.geometry.location.lng() }}</p>
+    <h3>Enter your address in the search box below to display location weather and photos.<h3>
+  </div>
+<!-- </div>
+<div class="map-window"> -->
+  <div ng-hide="$ctrl.gpsData.name.length > 0">
+    <h1 class="subtitle">London</h1>
+    <p>Lat: 51.5073509, Long: -0.12775829999998223</p>
+    <h3>Enter your address in the search box below to display location weather and photos.<h3>
+  </div>
+</div>
